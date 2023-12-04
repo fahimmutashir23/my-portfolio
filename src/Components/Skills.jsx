@@ -4,7 +4,6 @@ import MongoDB from "../assets/mongodb.png";
 import materialUI from "../assets/materialUI.png";
 import expressJs from "../assets/icons8-express-js-50.png";
 import tailwind from "../assets/icons8-tailwind-css-48.png";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import 'react-circular-progressbar/dist/styles.css';
 
 const Skills = () => {

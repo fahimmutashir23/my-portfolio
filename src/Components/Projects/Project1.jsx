@@ -1,6 +1,6 @@
 import project_2 from "../../assets/project-2.jpg";
 
-const Project3 = () => {
+const Project1 = () => {
   return (
     <div>
       <div data-aos="fade-up" data-aos-duration="2000" className="mt-10">
@@ -8,38 +8,38 @@ const Project3 = () => {
           <img src={project_2} alt="" className="w-full h-full object-cover" />
           <div className="bg-gradient-to-b from-transparent to-black h-28 absolute w-full bottom-0 flex items-end p-5">
             <button
-              onClick={() => document.getElementById("my_modal_3").showModal()}
+              onClick={() => document.getElementById("my_modal_1").showModal()}
               className="btn bg-red-600 btn-sm rounded-md"
             >
               Important links
             </button>
           </div>
         </div>
-        <h1 className="text-2xl font-medium">Fashion Den</h1>
+        <h1 className="text-2xl font-medium">FM Diagnostic Center</h1>
       </div>
       
 
-      <dialog id="my_modal_3" className="modal">
+      <dialog id="my_modal_1" className="modal">
         <div className="modal-box backdrop-blur-xl rounded-2xl bg-transparent">
           <form method="dialog">
             <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
               ✕
             </button>
           </form>
-          <h3 className="font-bold text-2xl text-center">Fashion Den</h3>
+          <h3 className="font-bold text-2xl text-center">FM Diagnostic Center</h3>
           <ul className="text-blue-500 flex justify-evenly my-4">
             <li className="hover:underline hover:text-red-500">
-              <a href="https://flashy-yarn.surge.sh/">Live Link</a>
+              <a href="https://impossible-help.surge.sh/">Live Link</a>
             </li>{" "}
             |
             <li className="hover:underline hover:text-red-500">
-              <a href="https://github.com/fahimmutashir23/fashion-den">
+              <a href="https://github.com/fahimmutashir23/FM-Diagnostic-center">
                 Client Site Github
               </a>
             </li>{" "}
             |
             <li className="hover:underline hover:text-red-500">
-              <a href="https://github.com/fahimmutashir23/fashion-den-server">
+              <a href="https://github.com/fahimmutashir23/FM-Diagnostic-server">
                 Server Site Github
               </a>
             </li>
@@ -48,8 +48,7 @@ const Project3 = () => {
           <div className=" space-y-2">
             <p>
               <strong className="text-red-500">Frontend : </strong> Using
-              ReactJS, TailwindCSS and for component library using DaisyUI most
-              of the cases.
+              ReactJS, Material UI
             </p>
             <p>
               <strong className="text-red-500">Backend : </strong> Using MongoDB
@@ -70,4 +69,4 @@ const Project3 = () => {
   );
 };
 
-export default Project3;
+export default Project1;

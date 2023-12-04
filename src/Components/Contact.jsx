@@ -12,7 +12,7 @@ const Contact = () => {
     const email = e.target.email.value;
     const name = e.target.name.value;
     const whatsApp = e.target.whatsApp.value;
-    const attachment = e.target.attachment.files[0];
+    // const attachment = e.target.attachment.files[0];
     const message = e.target.message.value;
 
     const serviceId = import.meta.env.VITE_SERVICEID;
@@ -37,14 +37,16 @@ const Contact = () => {
   };
   return (
     <div className="pt-20" id="contact">
-      <h3 className="flex gap-2 max-w-fit text-xs uppercase border-[1px] rounded-3xl border-red-500 px-4 py-1 mb-2">
-        <FaPhone className="text-sm"></FaPhone>Contact
-      </h3>
-      <h1 className="text-3xl">
-        Touch with <span className="text-yellow-600">Fahim</span>
-      </h1>
+      <div data-aos="fade-up" data-aos-duration="2000">
+        <h3 className="flex gap-2 max-w-fit text-xs uppercase border-[1px] rounded-3xl border-red-500 px-4 py-1 mb-2">
+          <FaPhone className="text-sm"></FaPhone>Contact
+        </h3>
+        <h1 className="text-3xl">
+          Touch with <span className="text-yellow-600">Fahim</span>
+        </h1>
+      </div>
 
-      <div className="mt-10">
+      <div className="mt-10" data-aos="zoom-in" data-aos-duration="2000">
         <form onSubmit={handleSubmit}>
           <div className="flex gap-2">
             <div className="w-1/2">
