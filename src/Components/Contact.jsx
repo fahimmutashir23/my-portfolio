@@ -1,22 +1,19 @@
-
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { FaPhone } from "react-icons/fa6";
-import { FidgetSpinner } from "react-loader-spinner";
+import ReactiveButton from "reactive-button";
 
 const Contact = () => {
-    const [loading, setLoading] = useState(false);
-    const [confirm, setConfirm] = useState("");
+  const [loading, setLoading] = useState("idle");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true)
+    setLoading("loading");
     const email = e.target.email.value;
     const name = e.target.name.value;
     const whatsApp = e.target.whatsApp.value;
     const attachment = e.target.attachment.files[0];
     const message = e.target.message.value;
-    
 
     const serviceId = import.meta.env.VITE_SERVICEID;
     const templateId = import.meta.env.VITE_TEMPLATEID;
@@ -29,14 +26,14 @@ const Contact = () => {
       message: message,
     };
 
-    emailjs.send(serviceId, templateId, templateParams, publicKey)
-    .then(res => {
-        setLoading(false)
-        if(res.status === 200){
-            setConfirm("Successfully Sent")
-            e.target.reset()
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then((res) => {
+        setLoading("success");
+        if (res.status === 200) {
+          e.target.reset();
         }
-    })
+      });
   };
   return (
     <div className="pt-20" id="contact">
@@ -121,24 +118,22 @@ const Contact = () => {
             className="block p-2.5 w-full text-sm bg-zinc-900 rounded-lg "
             placeholder="Leave a comment..."
           ></textarea>
-          <p className="my-1 text-red-500">{confirm}</p>
-          <button
-            type="submit"
-            className="btn rounded-md w-full bg-zinc-900 text-red-500 shadow-md shadow-black uppercase mt-4"
-          >
-            {loading ? 
-            <FidgetSpinner
-            visible={true}
-            height="24"
-            width="24"
-            ariaLabel="dna-loading"
-            wrapperStyle={{}}
-            wrapperClass="dna-wrapper"
-            ballColors={['#ff0000', '#00ff00', '#0000ff']}
-            backgroundColor="#F4442E"
-          />
-            : "Send Message"}
-          </button>
+          <div className="my-3 flex justify-center">
+            <ReactiveButton
+              style={{
+                color: "red",
+                backgroundColor: "#18181B",
+                borderRadius: "6px",
+                padding: "10px 50px",
+                fontSize: "16px",
+              }}
+              buttonState={loading}
+              idleText="Send Message"
+              loadingText="Loading"
+              successText="Done"
+              type="submit"
+            />
+          </div>
         </form>
       </div>
     </div>
