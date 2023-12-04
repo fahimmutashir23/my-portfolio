@@ -7,7 +7,7 @@ import tailwind from "../assets/icons8-tailwind-css-48.png";
 
 const Skills = () => {
   return (
-    <div className="mt-20" data-aos="fade-up" data-aos-duration="2000">
+    <div className="pt-20" id="skill" data-aos="fade-up" data-aos-duration="2000">
       <h3 className="flex gap-2 max-w-fit text-xs uppercase border-[1px] rounded-3xl border-red-500 px-4 py-1 mb-2">
         <FaUserGear className="text-sm"></FaUserGear>Skills
       </h3>

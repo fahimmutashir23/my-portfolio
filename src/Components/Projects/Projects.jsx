@@ -4,7 +4,7 @@ import Project3 from "./Project3";
 
 const Projects = () => {
   return (
-    <div className=" mt-20">
+    <div className=" pt-20" id="project">
       <h3 className="flex gap-2 max-w-fit text-xs uppercase border-[1px] rounded-3xl border-red-500 px-4 py-1 mb-2">
         <FaProjectDiagram className="text-sm"></FaProjectDiagram>Projects
       </h3>

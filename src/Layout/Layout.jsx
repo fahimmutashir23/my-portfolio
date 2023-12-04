@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom";
 import Sidebar from "../Pages/Sidebar/Sidebar";
-import Navbar from "../Components/Navbar";
 // import bgImg from "../assets/pngegg.png";
 
 const Layout = () => {
@@ -17,9 +16,7 @@ const Layout = () => {
           <Sidebar></Sidebar>
         </div>
         <div className="flex-1">
-          <div className="fixed z-10 max-w-[calc(1152px-296px)] w-full">
-            <Navbar></Navbar>
-          </div>
+          
           <Outlet></Outlet>
         </div>
       </div>

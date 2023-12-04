@@ -1,12 +1,17 @@
 import CountUp from "react-countup";
-// import "./styles.css";
 import { AiFillHome, AiOutlineArrowDown } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const Introduce = () => {
+  const handleClick = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if(element){
+      element.scrollIntoView({behavior: 'smooth'})
+    }
+  };
   return (
     <div>
-      <div className="flex justify-end pt-20">
+      <div className="flex justify-end pt-20" id="introduce">
         <div>
           <h3 className="flex gap-2 max-w-fit text-xs uppercase border-[1px] rounded-3xl border-yellow-800 p-2">
             <AiFillHome className="text-sm"></AiFillHome>Introduce
@@ -40,7 +45,12 @@ const Introduce = () => {
               </span>
               + Projects
             </h1>
-            <Link to='/project' className="border-[3px] rounded-full p-3 max-w-fit border-red-500"><AiOutlineArrowDown className="animate-bounce w-6 h-6 text-yellow-400"></AiOutlineArrowDown></Link>
+            <Link
+              onClick={() => handleClick('project')}
+              className="border-[3px] rounded-full p-3 max-w-fit border-red-500"
+            >
+              <AiOutlineArrowDown className="animate-bounce w-6 h-6 text-yellow-400"></AiOutlineArrowDown>
+            </Link>
           </div>
         </div>
       </div>
