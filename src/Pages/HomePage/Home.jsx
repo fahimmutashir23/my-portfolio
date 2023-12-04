@@ -1,3 +1,4 @@
+import Contact from "../../Components/Contact";
 import Introduce from "../../Components/Introduce";
 import Projects from "../../Components/Projects/Projects";
 import Skills from "../../Components/Skills";
@@ -72,6 +73,7 @@ const Home = () => {
         <Introduce></Introduce>
         <Projects></Projects>
         <Skills></Skills>
+        <Contact></Contact>
       </div>
     </div>
   );
