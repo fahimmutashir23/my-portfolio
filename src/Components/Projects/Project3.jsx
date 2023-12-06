@@ -1,11 +1,11 @@
-import project_2 from "../../assets/project-2.jpg";
+import projectImg from "../../assets/project-3.jpg";
 
 const Project3 = () => {
   return (
     <div>
       <div data-aos="fade-up" data-aos-duration="2000" className="mt-10">
         <div className="mt-10 relative rounded-2xl border-2 border-red-500 overflow-hidden">
-          <img src={project_2} alt="" className="w-full h-full object-cover" />
+          <img src={projectImg} alt="" className="w-full h-[360px] object-cover" />
           <div className="bg-gradient-to-b from-transparent to-black h-28 absolute w-full bottom-0 flex items-end p-5">
             <button
               onClick={() => document.getElementById("my_modal_3").showModal()}

@@ -16,7 +16,7 @@ const Skills = () => {
         My <span className="text-yellow-600">Advantage</span>
       </h1>
 
-      <div className="mt-10 grid grid-cols-4 gap-8">
+      <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-8">
         <div className="flex flex-col items-center" data-aos="fade-right" data-aos-duration="2000">
           <div className="border-2 border-red-500 rounded-full px-7 py-8 max-w-fit flex flex-col justify-center items-center">
             <FaReact className="text-5xl mb-2"></FaReact>
