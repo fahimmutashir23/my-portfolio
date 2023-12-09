@@ -9,7 +9,6 @@ const Layout = () => {
           <Sidebar></Sidebar>
         </div>
         <div className="md:flex-1">
-          
           <Outlet></Outlet>
         </div>
       </div>

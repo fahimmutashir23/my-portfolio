@@ -6,14 +6,14 @@ import {
   AiOutlineMail,
 } from "react-icons/ai";
 import { MdOutlineLocationOn } from "react-icons/md";
-import CV from "../../assets/Fahim Muntashir.pdf"
+import CV from "../../assets/resume/Fahim Muntashir-Frontend.pdf"
 
 const Sidebar = () => {
   return (
     <div 
     data-aos="fade-right"
     data-aos-duration="2000"
-    className="border-[1px] border-yellow-800 p-6 rounded-2xl md:fixed md:min-h-[calc(100vh-32px)]">
+    className="border-[1px] bg-[#202020] border-yellow-800 p-6 rounded-2xl md:fixed md:min-h-[calc(100vh-32px)]">
       <div>
         <h1 className="font-semibold text-xl uppercase">md Fahim Muntashir</h1>
         <h1 className="text-red-500 text-base">Web Developer</h1>
@@ -48,7 +48,7 @@ const Sidebar = () => {
       </div>
       <div>
         <a href={CV} download><button className="btn rounded-3xl w-full bg-zinc-900 text-red-500 shadow-md shadow-black uppercase">
-          download cv
+          download resume
         </button></a>
       </div>
     </div>

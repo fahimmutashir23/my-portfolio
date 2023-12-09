@@ -24,7 +24,7 @@ const Introduce = () => {
             className="text-6xl mt-10"
           >
             Say Hi from <span className="text-red-600">Fahim</span>, <br />{" "}
-            <span className="text-5xl">Web Developer</span>
+            <span className="text-4xl md:text-5xl">Web Developer</span>
           </h1>
           <h1
             data-aos="fade-left"
