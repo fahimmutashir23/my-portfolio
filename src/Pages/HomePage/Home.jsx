@@ -51,11 +51,11 @@ const Home = () => {
   );
   return (
     <div className="flex">
-      <div className="md:fixed md:top-44 md:-left-[60px] z-10  max-w-[calc(1152px-296px)] md:w-full"
+      <div className="md:fixed md:top-44 md:-left-[58px]  max-w-[calc(1152px-296px)] md:w-full"
       data-aos="fade-right"
       data-aos-duration="2000"
       >
-        <div className="navbar bg-transparent -z-10 border-r-[1px] border-t-[1px] border-b-[1px] border-yellow-800 rounded-2xl rounded-tl-3xl rounded-bl-3xl max-w-fit mx-auto">
+        <div className="navbar bg-transparent border-r-[1px] border-t-[1px] border-b-[1px] border-yellow-800 rounded-xl rounded-tl-none rounded-bl-none max-w-fit mx-auto">
           <div className="navbar-start"></div>
           <div className="navbar-center">
             <ul className="menu menu-vertical menu-sm px-0 space-y-7">
