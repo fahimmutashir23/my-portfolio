@@ -6,9 +6,14 @@ import { IoMdPerson } from "react-icons/io";
 import { FaProjectDiagram } from "react-icons/fa";
 import { FaGraduationCap, FaPhone, FaUserGear } from "react-icons/fa6";
 import Education from "../../Components/Education";
-
+import { useEffect, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
+import particlesConfig from "../../Components/Utils/particles.config";
 
 const Home = () => {
+  const [init, setInit] = useState(false);
+
   const handleClick = (sectionID) => {
     const element = document.getElementById(sectionID);
     if (element) {
@@ -45,25 +50,46 @@ const Home = () => {
       <li>
         <button
           className="hover:rounded-full rounded-full"
-          onClick={() => handleClick("contact")}>
+          onClick={() => handleClick("contact")}
+        >
           <FaPhone className="text-red-600"></FaPhone>
         </button>
       </li>
       <li>
         <button
           className="hover:rounded-full rounded-full"
-          onClick={() => handleClick("education")}>
+          onClick={() => handleClick("education")}
+        >
           <FaGraduationCap className="text-red-600"></FaGraduationCap>
         </button>
       </li>
     </>
   );
+
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
+
+  const particlesLoaded = () => {};
+
   return (
     <div className="flex">
-      
-      <div className="md:fixed md:top-44 md:-left-[58px]  max-w-[calc(1152px-296px)] md:w-full"
-      data-aos="fade-right"
-      data-aos-duration="2000"
+      {init && (
+        <Particles
+          id="tsparticles"
+          particlesLoaded={particlesLoaded}
+          options={particlesConfig}
+        />
+      )}
+
+      <div
+        className="md:fixed md:top-44 md:-left-[58px]  max-w-[calc(1152px-296px)] md:w-full"
+        data-aos="fade-right"
+        data-aos-duration="2000"
       >
         <div className="navbar bg-transparent border-r-[1px] border-t-[1px] border-b-[1px] border-yellow-800 rounded-xl rounded-tl-none rounded-bl-none max-w-fit mx-auto">
           <div className="navbar-start"></div>

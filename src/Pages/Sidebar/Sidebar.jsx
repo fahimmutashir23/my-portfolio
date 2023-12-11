@@ -13,7 +13,7 @@ const Sidebar = () => {
     <div 
     data-aos="fade-right"
     data-aos-duration="2000"
-    className="border-[1px] bg-transparent border-yellow-800 p-6 rounded-2xl md:fixed md:min-h-[calc(100vh-32px)]">
+    className="border-[1px] border-yellow-800 p-6 rounded-2xl md:fixed md:min-h-[calc(100vh-32px)]">
       
       <div>
         <h1 className="font-semibold text-xl uppercase">md Fahim Muntashir</h1>
