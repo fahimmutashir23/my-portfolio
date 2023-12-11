@@ -1,4 +1,4 @@
-import profile from "../../assets/profileImage.jpg";
+import profile from "../../assets/profile2.png";
 import {
   AiOutlineFacebook,
   AiOutlineGithub,
@@ -13,7 +13,8 @@ const Sidebar = () => {
     <div 
     data-aos="fade-right"
     data-aos-duration="2000"
-    className="border-[1px] bg-[#202020] border-yellow-800 p-6 rounded-2xl md:fixed md:min-h-[calc(100vh-32px)]">
+    className="border-[1px] bg-transparent border-yellow-800 p-6 rounded-2xl md:fixed md:min-h-[calc(100vh-32px)]">
+      
       <div>
         <h1 className="font-semibold text-xl uppercase">md Fahim Muntashir</h1>
         <h1 className="text-red-500 text-base">Web Developer</h1>
@@ -22,7 +23,7 @@ const Sidebar = () => {
         <img
           src={profile}
           alt="profile Image"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-contain"
         />
       </div>
       <div className="space-y-1">

@@ -4,7 +4,9 @@ import Projects from "../../Components/Projects/Projects";
 import Skills from "../../Components/Skills";
 import { IoMdPerson } from "react-icons/io";
 import { FaProjectDiagram } from "react-icons/fa";
-import { FaPhone, FaUserGear } from "react-icons/fa6";
+import { FaGraduationCap, FaPhone, FaUserGear } from "react-icons/fa6";
+import Education from "../../Components/Education";
+
 
 const Home = () => {
   const handleClick = (sectionID) => {
@@ -47,10 +49,18 @@ const Home = () => {
           <FaPhone className="text-red-600"></FaPhone>
         </button>
       </li>
+      <li>
+        <button
+          className="hover:rounded-full rounded-full"
+          onClick={() => handleClick("education")}>
+          <FaGraduationCap className="text-red-600"></FaGraduationCap>
+        </button>
+      </li>
     </>
   );
   return (
     <div className="flex">
+      
       <div className="md:fixed md:top-44 md:-left-[58px]  max-w-[calc(1152px-296px)] md:w-full"
       data-aos="fade-right"
       data-aos-duration="2000"
@@ -70,6 +80,7 @@ const Home = () => {
         <Introduce></Introduce>
         <Projects></Projects>
         <Skills></Skills>
+        <Education></Education>
         <Contact></Contact>
       </div>
     </div>

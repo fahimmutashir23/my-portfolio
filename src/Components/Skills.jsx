@@ -1,9 +1,9 @@
 import { FaReact, FaUserGear } from "react-icons/fa6";
-import javaScript from "../assets/javascript.png";
-import MongoDB from "../assets/mongodb.png";
-import materialUI from "../assets/materialUI.png";
-import expressJs from "../assets/icons8-express-js-50.png";
-import tailwind from "../assets/icons8-tailwind-css-48.png";
+import javaScript from "../assets/Icons/javascript.png";
+import MongoDB from "../assets/Icons/mongodb.png";
+import materialUI from "../assets/Icons/materialUI.png";
+import expressJs from "../assets/Icons/icons8-express-js-50.png";
+import tailwind from "../assets/Icons/icons8-tailwind-css-48.png";
 import 'react-circular-progressbar/dist/styles.css';
 
 const Skills = () => {

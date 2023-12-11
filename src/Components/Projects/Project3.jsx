@@ -1,23 +1,45 @@
-import projectImg from "../../assets/project-3.jpg";
+import img1 from "../../assets/Project3/img1.jpg";
+import img2 from "../../assets/Project3/img2.jpg";
+import img3 from "../../assets/Project3/img3.jpg";
+import img4 from "../../assets/Project3/img4.jpg";
+import { Navigation, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperBtn from "../Utils/SwiperBtn";
 
 const Project3 = () => {
+  const displayImg = [img1, img2, img3, img4];
   return (
     <div>
       <div data-aos="fade-up" data-aos-duration="2000" className="mt-10">
         <div className="mt-10 relative rounded-2xl border-2 border-red-500 overflow-hidden">
-          <img src={projectImg} alt="" className="w-full h-[360px] object-cover" />
-          <div className="bg-gradient-to-b from-transparent to-black h-28 absolute w-full bottom-0 flex items-end p-5">
-            <button
-              onClick={() => document.getElementById("my_modal_3").showModal()}
-              className="btn bg-red-600 btn-sm rounded-md"
-            >
-              Important links
-            </button>
-          </div>
+          <Swiper
+            modules={[Navigation, A11y]}
+            spaceBetween={50}
+            loop={true}
+            slidesPerView={1}
+          >
+            {displayImg?.map((img) => (
+              <SwiperSlide key={img} className="relative">
+                <img src={img} alt="" className="w-full h-full object-cover" />
+              </SwiperSlide>
+            ))}
+            <div className="bg-gradient-to-b from-transparent to-black h-28 absolute w-full bottom-0 flex items-end p-5 z-10">
+              <button
+                onClick={() =>
+                  document.getElementById("my_modal_3").showModal()
+                }
+                className="btn bg-red-600 btn-sm rounded-md"
+              >
+                Important links
+              </button>
+            </div>
+            <div className="absolute bottom-5 z-10 right-5">
+              <SwiperBtn></SwiperBtn>
+            </div>
+          </Swiper>
         </div>
         <h1 className="text-2xl font-medium">Fashion Den</h1>
       </div>
-      
 
       <dialog id="my_modal_3" className="modal">
         <div className="modal-box backdrop-blur-xl rounded-2xl bg-transparent">

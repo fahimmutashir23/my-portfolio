@@ -1,20 +1,43 @@
-import project_2 from "../../assets/project-2.jpg";
-
+import img1 from "../../assets/Project2/img1.jpg";
+import img2 from "../../assets/Project2/img2.jpg";
+import img3 from "../../assets/Project2/img3.jpg";
+import img4 from "../../assets/Project2/img4.jpg";
+import img5 from "../../assets/Project2/img5.jpg";
+import { Navigation, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperBtn from "../Utils/SwiperBtn";
 
 const Project2 = () => {
+  const displayImg = [img1, img2, img3, img4, img5];
   return (
     <div>
       <div data-aos="fade-up" data-aos-duration="2000" className=" mt-10">
         <div className="mt-10 relative rounded-2xl border-2 border-red-500 overflow-hidden">
-          <img src={project_2} alt="" className="w-full h-full object-cover" />
-          <div className="bg-gradient-to-b from-transparent to-black h-28 absolute w-full bottom-0 flex items-end p-5">
-            <button
-              onClick={() => document.getElementById("my_modal_2").showModal()}
-              className="btn bg-red-600 btn-sm rounded-md"
-            >
-              Important links
-            </button>
-          </div>
+          <Swiper
+            modules={[Navigation, A11y]}
+            spaceBetween={50}
+            loop={true}
+            slidesPerView={1}
+          >
+            {displayImg?.map((img) => (
+              <SwiperSlide key={img} className=" relative">
+                <img src={img} alt="" className="w-full h-full object-cover" />
+              </SwiperSlide>
+            ))}
+            <div className="bg-gradient-to-b from-transparent to-black h-28 absolute w-full bottom-0 flex items-end p-5 z-10">
+              <button
+                onClick={() =>
+                  document.getElementById("my_modal_2").showModal()
+                }
+                className="btn bg-red-600 btn-sm rounded-md"
+              >
+                Important links
+              </button>
+            </div>
+            <div className="absolute bottom-5 z-10 right-5">
+              <SwiperBtn></SwiperBtn>
+            </div>
+          </Swiper>
         </div>
         <h1 className="text-2xl font-medium">Job Heaven</h1>
       </div>
