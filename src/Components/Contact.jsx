@@ -48,8 +48,8 @@ const Contact = () => {
 
       <div className="mt-10" data-aos="zoom-in" data-aos-duration="2000">
         <form onSubmit={handleSubmit}>
-          <div className="flex gap-2">
-            <div className="w-1/2">
+          <div className="md:flex gap-2">
+            <div className="md:w-1/2">
               <label className="block mb-2 text-sm text-red-500">
                 Your Email *
               </label>
@@ -64,7 +64,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div className="w-1/2">
+            <div className="md:w-1/2">
               <label className="block mb-2 text-sm text-red-500">
                 Your Name *
               </label>
@@ -80,8 +80,8 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="flex gap-2 mt-6">
-            <div className="w-1/2">
+          <div className="md:flex gap-2 mt-6">
+            <div className="md:w-1/2">
               <label className="block mb-2 text-sm text-red-500">
                 Whats App
               </label>
@@ -95,7 +95,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div className="w-1/2">
+            <div className="md:w-1/2">
               <label className="block mb-2 text-sm text-red-500">
                 Attachment
               </label>

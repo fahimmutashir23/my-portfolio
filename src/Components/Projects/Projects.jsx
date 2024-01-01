@@ -2,6 +2,7 @@ import { FaProjectDiagram } from "react-icons/fa";
 import Project2 from "./Project2";
 import Project3 from "./Project3";
 import Project1 from "./Project1";
+import Project4 from "./Project4";
 
 const Projects = () => {
   return (
@@ -12,9 +13,10 @@ const Projects = () => {
       <h1 className="text-3xl">
         Feature <span className="text-yellow-600">Projects</span>
       </h1>
-      <Project1></Project1>
-      <Project2></Project2>
-      <Project3></Project3>
+      <Project1 />
+      <Project2 />
+      <Project4 />
+      <Project3 />
     </div>
   );
 };

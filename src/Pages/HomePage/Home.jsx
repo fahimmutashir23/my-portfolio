@@ -77,7 +77,7 @@ const Home = () => {
   const particlesLoaded = () => {};
 
   return (
-    <div className="flex">
+    <div className="md:flex">
       {init && (
         <Particles
           id="tsparticles"
@@ -87,14 +87,14 @@ const Home = () => {
       )}
 
       <div
-        className="md:fixed md:top-44 md:-left-[58px]  max-w-[calc(1152px-296px)] md:w-full"
+        className="lg:fixed bg-zinc-900 lg:bg-transparent rounded-full -ml-2"
         data-aos="fade-right"
         data-aos-duration="2000"
       >
-        <div className="navbar bg-transparent border-r-[1px] border-t-[1px] border-b-[1px] border-yellow-800 rounded-xl rounded-tl-none rounded-bl-none max-w-fit mx-auto">
+        <div className="navbar bg-transparent md:border-[1px] border-l-0 mt-2 lg:mt-[calc(100vh-75vh)] border-yellow-800 rounded-r-xl md:max-w-fit md:mx-auto">
           <div className="navbar-start"></div>
           <div className="navbar-center">
-            <ul className="menu menu-vertical menu-sm px-0 space-y-7">
+            <ul className="menu menu-horizontal md:menu-vertical menu-sm px-0 md:space-y-7">
               {navItem}
             </ul>
           </div>
