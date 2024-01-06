@@ -6,7 +6,7 @@ import {
   AiOutlineMail,
 } from "react-icons/ai";
 import { MdOutlineLocationOn } from "react-icons/md";
-import CV from "../../assets/resume/Fahim Muntashir-Frontend.pdf"
+import CV from "../../assets/resume/Resume of Fahim Muntashir-Frontend.pdf"
 
 const Sidebar = () => {
   return (
