@@ -28,7 +28,7 @@ const Project4 = () => {
             <div className="bg-gradient-to-b from-transparent to-black h-28 absolute w-full bottom-0 flex items-end p-5 z-10">
               <button
                 onClick={() =>
-                  document.getElementById("my_modal_3").showModal()
+                  document.getElementById("my_modal_4").showModal()
                 }
                 className="btn bg-red-600 btn-sm rounded-md"
               >
@@ -40,17 +40,17 @@ const Project4 = () => {
             </div>
           </Swiper>
         </div>
-        <h1 className="text-2xl font-medium">Fashion Den</h1>
+        <h1 className="text-2xl font-medium">Task Management</h1>
       </div>
 
-      <dialog id="my_modal_3" className="modal">
+      <dialog id="my_modal_4" className="modal">
         <div className="modal-box backdrop-blur-xl rounded-2xl bg-transparent">
           <form method="dialog">
             <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
               ✕
             </button>
           </form>
-          <h3 className="font-bold text-2xl text-center">Fashion Den</h3>
+          <h3 className="font-bold text-2xl text-center">Task Management</h3>
           <ul className="text-blue-500 flex justify-evenly my-4">
             <li className="hover:underline hover:text-red-500">
               <a href="https://poised-beds.surge.sh/">Live Link</a>
