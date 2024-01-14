@@ -4,6 +4,8 @@ import MongoDB from "../assets/Icons/mongodb.png";
 import materialUI from "../assets/Icons/materialUI.png";
 import expressJs from "../assets/Icons/icons8-express-js-50.png";
 import tailwind from "../assets/Icons/icons8-tailwind-css-48.png";
+import redux from "../assets/Icons/Redux.png"
+import mySQL from "../assets/Icons/MySQL.png"
 import 'react-circular-progressbar/dist/styles.css';
 
 const Skills = () => {
@@ -41,14 +43,14 @@ const Skills = () => {
         <div className="flex flex-col items-center" data-aos="fade-left" data-aos-duration="2000">
           <div className="border-2 border-red-500 rounded-full px-7 py-8 max-w-fit flex flex-col justify-center items-center">
             <img src={materialUI} alt="icon" className="h-12 w-12 mb-2" />
-            <p className="text-2xl text-yellow-600 font-medium">50%</p>
+            <p className="text-2xl text-yellow-600 font-medium">60%</p>
           </div>
           <h1 className="text-center">Material UI</h1>
         </div>
         <div className="flex flex-col items-center" data-aos="fade-right" data-aos-duration="2000">
           <div className="border-2 border-red-500 rounded-full px-7 py-8 max-w-fit flex flex-col justify-center items-center">
             <img src={MongoDB} alt="icon" className="h-12 w-12 mb-2" />
-            <p className="text-2xl text-yellow-600 font-medium">50%</p>
+            <p className="text-2xl text-yellow-600 font-medium">60%</p>
           </div>
           <h1 className="text-center">MongoBD</h1>
         </div>
@@ -58,6 +60,20 @@ const Skills = () => {
             <p className="text-2xl text-yellow-600 font-medium">50%</p>
           </div>
           <h1 className="text-center">Express JS</h1>
+        </div>
+        <div className="flex flex-col items-center" data-aos="fade-up" data-aos-duration="2000">
+          <div className="border-2 border-red-500 rounded-full px-7 py-8 max-w-fit flex flex-col justify-center items-center">
+            <img src={redux} alt="icon" className="h-12 w-12 mb-2" />
+            <p className="text-2xl text-yellow-600 font-medium">50%</p>
+          </div>
+          <h1 className="text-center">Redux</h1>
+        </div>
+        <div className="flex flex-col items-center" data-aos="fade-up" data-aos-duration="2000">
+          <div className="border-2 border-red-500 rounded-full px-7 py-8 max-w-fit flex flex-col justify-center items-center">
+            <img src={mySQL} alt="icon" className="h-12 w-12 mb-2" />
+            <p className="text-2xl text-yellow-600 font-medium">40%</p>
+          </div>
+          <h1 className="text-center">MySQL</h1>
         </div>
       </div>
     </div>

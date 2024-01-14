@@ -6,7 +6,8 @@ import {
   AiOutlineMail,
 } from "react-icons/ai";
 import { MdOutlineLocationOn } from "react-icons/md";
-import CV from "../../assets/resume/Resume of Fahim Muntashir-Frontend.pdf"
+// import CV from "../../assets/resume/Resume of Fahim Muntashir-Frontend.pdf"
+const resumeLink = 'https://drive.google.com/file/d/1sSJCsFktZ9yF766Z1zAtAwz42OwXVHLu/view?usp=drive_link'
 
 const Sidebar = () => {
   return (
@@ -47,10 +48,22 @@ const Sidebar = () => {
         <AiOutlineFacebook className="text-2xl text-red-500"></AiOutlineFacebook>
         </a>
       </div>
-      <div>
-        <a href={CV} download><button className="btn rounded-3xl w-full bg-zinc-900 text-red-500 shadow-md shadow-black uppercase">
-          download resume
-        </button></a>
+      <div className="flex flex-col gap-2">
+        <a href={resumeLink} target="blank">
+          <button className="btn rounded-3xl w-full bg-zinc-900 text-red-500 shadow-md shadow-black uppercase">
+          see / download resume
+        </button>
+        </a>
+        <a href="tel:+880 1581 868984" className="md:hidden">
+        <button className="btn rounded-3xl w-full bg-zinc-900 text-red-500 shadow-md shadow-black uppercase">
+          Direct Call
+        </button>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=01759530743" target="blank">
+        <button className="btn rounded-3xl w-full bg-zinc-900 text-red-500 shadow-md shadow-black uppercase">
+          Contact with Whats App
+        </button>
+        </a>
       </div>
     </div>
   );
